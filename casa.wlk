@@ -36,6 +36,14 @@ object casaDePepeYJulian {
 	}
 
 	method malaEpoca() {
-	  return 
+	  return cosas.all({cosas => cosas.categoria().esComestible()})
+	}
+
+	method queFaltaComprar(lista) {
+	  return lista.filter({elemento => not self.estaComprado(elemento)})
+	}
+
+	method estaComprado(cosa) {
+	  return cosas.contains(cosa)
 	}
 }

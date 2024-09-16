@@ -31,7 +31,11 @@ object casaDePepeYJulian {
 	  return cosas.max({cosas => cosas.precio()})
 	}
 	
-	method comprados(categoría) {
+	method comprados(categoria) {
+	  return cosas.filter({cosas => cosas.categoria() == categoria})
+	}
+
+	method malaEpoca() {
 	  return 
 	}
 }

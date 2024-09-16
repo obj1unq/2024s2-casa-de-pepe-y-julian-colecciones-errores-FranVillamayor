@@ -14,10 +14,10 @@ test "test1" {
     assert.notThat(casaDePepeYJulian.vieneDeComprar(mueble))
     assert.that(casaDePepeYJulian.esDerrochona())
     assert.equals(heladera, casaDePepeYJulian.compraMasCara())
-    /*assert.equals([heladera, plancha], casaDePepeYJulian.comprados(electrodomestico))
+    assert.equals([heladera, plancha], casaDePepeYJulian.comprados(electrodomestico))
     assert.equals([cama], casaDePepeYJulian.comprados(mueble))
     assert.equals([], casaDePepeYJulian.comprados(comida))
-    assert.notThat(casaDePepeYJulian.malaEpoca())
+    /*assert.notThat(casaDePepeYJulian.malaEpoca())
     assert.equals([tiraDeAsado, paqueteDeFideos], casaDePepeYJulian.queFaltaComprar([tiraDeAsado, plancha, paqueteDeFideos]))
     assert.that(casaDePepeYJulian.faltaComida())
     assert.equals([electrodomestico, mueble], casaDePepeYJulian.categoriasCompradas()) */
